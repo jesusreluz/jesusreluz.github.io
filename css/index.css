@@ -9,11 +9,11 @@
 }
 
 :root {
-    --bg-color: #2a2a2a;
-    --second-bg-color: #202020;
-    --text-color: #fff;
-    --second-color: #ccc;
-    --main-color: #ff4d05;
+    --bg-color: #181414d3;
+    --second-bg-color: #56392B;
+    --text-color: #e9dede;
+    --second-color: #ebe3e3;
+    --main-color: #d1571a;
     --big-font: 5rem;
     --h2-font: 3rem;
     --p-font: 1.1rem;
@@ -87,7 +87,7 @@ section {
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: url(../img/img1_404.png);
+    background-image: url(../img/fotografia-en-blanco-y-negro-clave-baja.jpeg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -162,6 +162,33 @@ section {
 
 .btn:hover {
     transform: scale(0.9);
+}
+
+
+.box-say {
+    display: block;
+    margin-top: 25px;
+}
+
+.box-say pre {
+    display: flex;
+    padding: 8px;
+    background: #282a36;
+    border-radius: 8px;
+}
+
+.box-say pre span {
+    color: #f8f8f2;
+    font-family: monospace;
+    padding-left: 2rem;
+    font-size: var(--p-font);
+}
+
+#close-say {
+    float: right;
+    position: relative;
+    width: 5%;
+    font-size: 25px;
 }
 
 .btn-2 {
