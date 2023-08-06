@@ -21,7 +21,7 @@ app.listen(port, ()=> {
     console.log('Bot Encendido');
 });
 
-client.config = require('./config.json');
+client.config = require('../../config.json');
 client.events = new Collection();
 client.commands = new Collection();
 
