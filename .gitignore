@@ -1,2 +1,2 @@
-node_modules
-*.json
+projects/botutp/node_modules/
+projects/botutp/config.json
