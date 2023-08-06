@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: monospace;
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
@@ -16,7 +16,8 @@
     --main-color: #a71814;
     --big-font: 5rem;
     --h2-font: 3rem;
-    --p-font: 1.1rem;
+    --p-font: 1.3rem;
+    --button-font: 18px;
 }
 
 body {
@@ -137,6 +138,26 @@ section {
     line-height: 1.1;
 }
 
+.typing {
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid var(--second-bg-color);
+    width: 11ch;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    65% {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-right: transparent;
+    }
+}
+
 .home-text p {
     color: var(--second-color);
     font-size: var(--p-font);
@@ -160,30 +181,55 @@ section {
     letter-spacing: 1px;
     font-weight: 600;
     transition: all .45s ease;
+    font-size: var(--button-font);
 }
 
-.btn:hover {
+.btn:hover{
     transform: scale(0.9);
 }
-
 
 .box-say {
     display: block;
     margin-top: 25px;
+    position: relative;
+    left: -0rem;
 }
 
 .box-say pre {
-    display: flex;
+    display: grid;
     padding: 8px;
     background: #282a36;
     border-radius: 8px;
 }
 
 .box-say pre span {
+    padding: 15px;
     color: #f8f8f2;
     font-family: monospace;
     padding-left: 2rem;
     font-size: var(--p-font);
+}
+
+.logo-say {
+    display: inline-flex;
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateX(-200rem);
+    }
+    100% {
+        transform: translateX(0em);
+    }
+}
+
+@keyframes slide-out {
+    0% {
+        transform: translateX(0rem);
+    }
+    100% {
+        transform: translateX(-200rem);
+    }
 }
 
 #close-say {
@@ -197,7 +243,7 @@ section {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 15px;
+    font-size: var(--button-font);
     font-weight: 600;
     color: var(--text-color);
     margin-left: 35px;
@@ -236,7 +282,7 @@ header.sticky {
 
 .about img {
     max-width: 530px;
-    height: auto;
+    height: 500px;
     width: 100%;
     border-radius: 8px;
 }
@@ -259,7 +305,6 @@ header.sticky {
     font-size: var(--p-font);
     line-height: 1.8;
     margin-bottom: 4rem;
-    text-align: justify;
 }
 
 .skills {
@@ -283,7 +328,7 @@ header.sticky {
 
 .skills-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     align-items: center;
     gap: 2.5rem;
     margin-top: 5rem;
@@ -296,9 +341,46 @@ header.sticky {
     transition: all .45s ease;
 }
 
+.s-icons {
+    text-align: center;
+}
+
 .s-icons i {
     font-size: 32px;
     margin-bottom: 20px;
+    transition: all .45s ease;
+}
+
+.bxl-html5:hover {
+    color: #FF5733;
+}
+
+.bxl-css3:hover {
+    color: #264de4;
+}
+
+.bxl-javascript:hover {
+    color: #F0DB4F;
+}
+
+.bxl-typescript:hover {
+    color: #007acc;
+}
+
+.bxl-python:hover {
+    background: linear-gradient(to bottom right, #007acc 50%,#FFD43B 50%);
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+
+.bxl-java:hover {
+    background: linear-gradient(#f89820 50%,#5382a1 50%);
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+
+.bxl-php:hover {
+    color: #777BB3;
 }
 
 .box h3 {
@@ -498,11 +580,12 @@ header.sticky {
 
 .contact-form .submit {
     display: inline-block;
-    font-size: 16px;
+    margin-top: 10px;
     background: var(--main-color);
     color: var(--text-color);
     width: 160px;
     transition: all .45s ease;
+    font-size: var(--button-font);
 }
 
 .contact-form .submit:hover {
