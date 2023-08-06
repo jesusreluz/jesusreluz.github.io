@@ -136,11 +136,12 @@ section {
     font-size: 3rem;
     font-weight: 700;
     line-height: 1.1;
+    display: flex
 }
 
 .typing {
-    display: block;
     white-space: nowrap;
+    margin-left: 1.5rem;
     border-right: 4px solid var(--second-bg-color);
     width: 11ch;
     overflow: hidden;
@@ -351,36 +352,60 @@ header.sticky {
     transition: all .45s ease;
 }
 
-.bxl-html5:hover {
+.bxl-html5 {
     color: #FF5733;
 }
 
-.bxl-css3:hover {
+.bxl-css3 {
     color: #264de4;
 }
 
-.bxl-javascript:hover {
+.bxl-javascript {
     color: #F0DB4F;
 }
 
-.bxl-typescript:hover {
+.bxl-typescript {
     color: #007acc;
 }
 
-.bxl-python:hover {
+.bxl-python {
     background: linear-gradient(to bottom right, #007acc 50%,#FFD43B 50%);
     -webkit-background-clip: text;
     color: transparent; 
 }
 
-.bxl-java:hover {
+.bxl-java {
     background: linear-gradient(#f89820 50%,#5382a1 50%);
     -webkit-background-clip: text;
     color: transparent; 
 }
 
-.bxl-php:hover {
+.bxl-php {
     color: #777BB3;
+}
+
+.bx-mobile {
+    color: #40CFFF;
+}
+
+.bx-desktop {
+    color: #410093;
+}
+
+.bx-data {
+    color: #F29111;
+}
+
+.bx-group {
+    color: #31c5a5;
+}
+
+.bxl-visual-studio {
+    color: #0078d7;
+}
+
+.bx-book {
+    color: #974a40;
 }
 
 .box h3 {

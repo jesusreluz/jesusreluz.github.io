@@ -63,7 +63,7 @@ const typingLoad = () => {
     }, 8300);
     setTimeout(() => {
         typing.textContent = "Developer."
-        typing.style.cssText = "width: 10ch; animation: typing 5s steps(10), blink .5s infinite step-end alternate;"
+        typing.style.cssText = "width: 10ch; animation: typing 5s steps(10) infinite, blink .5s infinite step-end alternate;"
     }, 10000);
 
 };
