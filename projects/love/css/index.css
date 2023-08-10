@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+
+:root {
+    --bg-color: #B11313;
+    --second-bg-color: #0a2b4e;
+    --text-color: #e9dede;
+    --second-color: #447BBE;
+    --main-color: #a71814;
+    --big-font: 5.5rem;
+    --h2-font: 2rem;
+    --p-font: 1.6rem;
+    --button-font: 1.7rem;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.object {
+	position: fixed;
+    width: 50%;
+    height: 100%;
+    translate: 100%;
+    animation: 1s ease infinite corazon;
+}
+
+.img-2 {
+    content-visibility: hidden;
+    animation: none;
+}
+
+@keyframes corazon {
+    10% {
+        transform: scale(1.1);
+    }
+
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    padding: 25vh;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    background: #9c0720;
+}
+
+#indice {
+    background: var(--second-bg-color);
+}
+
+#agradecimientos {
+    background: #FFC500;
+    position: relative;
+}
+
+#comoteconoci {
+    background: #7F0909;
+    position: relative;
+}
+
+#comomegustaste {
+    background: #447BBE;
+    position: relative;
+}
+
+#porquetu {
+    background: #000000;
+}
+
+#loquesientoporti {
+    background: #447BBE;
+}
+
+#poemas {
+    background: #8b9eb3;
+    position: relative;
+}
+
+#porquemegustaria {
+    background: #0a2b4e;
+    position: relative;
+}
+
+#cosaslindas {
+    background: #12b49f;
+    position: relative;
+}
+
+.slide .one {
+    font-size: var(--h2-font);
+    margin-bottom: -15px;
+    margin-left: 5px;
+    color: #e8c39e;
+}
+
+.slide .two {
+    font-size: var(--big-font);
+    margin-bottom: -15px;
+    color: #f3b407;
+}
+
+.slide .three {
+    font-size: var(--h2-font);
+    margin-left: 27rem;
+    margin-bottom: 4rem;
+    color: #e8c39e;
+}
+
+.fecha {
+    font-size: var(--p-font);
+    color: #b08e6b;
+}
+
+.home-text p {
+    font-size: var(--p-font);
+    margin-top: 1.5rem;
+}
+
+.home-text p span {
+    font-weight: bold;
+    color: #ff9ea2;
+}
+
+.button {
+    width: 13rem;
+    border: 5px solid;
+    border-radius: 45px;
+    margin-top: 2rem;
+    padding: 10px;
+    background: #f3b407;
+    transition: all .45s ease;
+}
+
+.button a {
+    color: #147fc5;
+    font-size: var(--button-font);
+    font-weight: bold;
+    transition: all .45s ease;
+}
+
+.button:hover {
+    background: #f3bc26;
+    width: 13.5rem;
+}
+
+.button:hover a{
+    padding-left: 10px;
+    color: #1496ea;
+}
+
+.about {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    align-items: center;
+}
+
+.comoteconoci {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    align-items: center;
+}
+
+.indice-text {
+    position: absolute;
+    left: 50%;
+}
+
+.indice-text h2 {
+    font-size: var(--h2-font);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.indice-text p {
+    font-size: var(--p-font);
+}
+
+.indice-text span {
+    color: var(--main-color);
+    margin-right: 10px;
+}
+
+.agradecimientos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slytherin {
+    position: absolute;
+    left: 0%;
+    width: 50%;
+}
+
+.slytherin img {
+    width: 60%;
+    margin: 20%;
+}
+
+.agradecimientos-content {
+    position: absolute;
+    left: 45%;
+    margin: 2.5%;
+}
+
+.main-text h2 {
+    font-size: var(--h2-font);
+    text-align: center;
+}
+
+.content p {
+    font-size: 1.45rem;
+    padding: 10px;
+}
+
+.agradecimientos-content .main-text h2 {
+    color: #ff1c1c;
+}
+
+.main-text h2 {
+    padding: 20px;
+}
+
+.agradecimientos-content .content {
+    color: #000000;
+}
+
+.content {
+    padding: 15px;
+}
+
+.comomegustaste {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    align-items: center;
+}
+
+.comomegustaste-content {
+    width: 100%;
+    position: absolute;
+    left: 2%;
+    padding-right: 2%;
+}
+
+.comomegustaste-content .content {
+    padding: 0;
+    margin-right: 1%;
+}
+
+.comomegustaste-content .main-text h2 {
+    margin-top: 0%;
+    margin-bottom: 0;
+    font-size: 1.3rem;
+}
+
+.comomegustaste-content .content p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem;
+}
+
+.porquetu {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    align-items: center;
+}
+
+.porquetu-content {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+}
+
+.porquetu-content p{
+    font-size: 1.2rem;
+}
+
+
+.loquesientoporti {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    align-items: center;
+}
+
+.loquesientoporti-content {
+    width: 55%;
+    position: absolute;
+    left: 5%;
+}
